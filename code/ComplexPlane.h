@@ -21,7 +21,9 @@ enum class State {
 
 class ComplexPlane : public Drawable {
 public:
+	//Constructor
 	ComplexPlane(int pixelWidth, int pixelHeight);
+
 	void draw(RenderTarget& target, RenderStates states) const override; // target is rendering a target to draw to, states is our curr render states
 	void zoomIn();
 	void zoomOut();
@@ -33,6 +35,7 @@ private:
 	int countIterations(Vector2f coord);
 	void iterationsToRGB(size_t count, Uint8& r, Uint8& b);
 	Vector2f mapPixelToCoords(Vector2i mousePixel);
+	
 	VertexArray m_vArray;
 	State m_state;
 	Vector2f m_mouseLocation;
@@ -41,7 +44,6 @@ private:
 	Vector2f m_plane_size;
 	int m_zoomCount;
 	float m_aspectRatio;
-
 };
 
 #endif
