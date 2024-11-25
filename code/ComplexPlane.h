@@ -1,4 +1,3 @@
-#pragma once
 #ifndef COMPLEXPLANE.H
 #define COMPLEXPLANE.H
 
@@ -33,7 +32,7 @@ public:
 	void updateRender();
 private:
 	int countIterations(Vector2f coord);
-	void iterationsToRGB(size_t count, Uint8& r, Uint8& b);
+	void iterationsToRGB(size_t count, Uint8& r, Uint8& g, Uint8& b);
 	Vector2f mapPixelToCoords(Vector2i mousePixel);
 	
 	VertexArray m_vArray;
