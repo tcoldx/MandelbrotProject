@@ -8,9 +8,9 @@ using namespace sf;
 using namespace std;
 
 const unsigned int MAX_ITER = 32;
-const float BASE_WIDTH = 4.0;
-const float BASE_HEIGHT = 4.0;
-const float BASE_ZOOM = 0.5;
+const float BASE_WIDTH = 4.0f;
+const float BASE_HEIGHT = 4.0f;
+const float BASE_ZOOM = 0.5f;
 
 
 enum class State {
